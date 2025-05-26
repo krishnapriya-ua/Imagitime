@@ -1,6 +1,8 @@
+
+
 .hero-section {
   min-height: 100vh;
-  background: radial-gradient(circle at center, #3b1f5f 0%, #2b0d4a8f 100%);
+  background: radial-gradient(circle at center, #6b6b6b 0%, #24123a 100%);
   color: #fff;
   padding: 2rem;
 }
@@ -54,17 +56,124 @@
   padding: 8px 0;
   font-size: 14px;
   color: #333;
+  width: -webkit-fill-available;
 }
 
 
 .navbar-custom a {
-  text-decoration: none;
-  color: #444;
-  font-weight: 500;
-  padding: 5px 10px;
-  transition: color 0.3s;
+     text-decoration: underline;
+    color: white;
+    font-weight: 500;
+    padding: 5px 10px;
+    transition: color 0.3s;
+    font-family: cursive;
 }
 
 .navbar-custom a:hover {
-  color: #007bff;
+  color: #010e1c;
+}
+
+.buyer-section {
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+  color: #fff;
+}
+
+.section-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.buyer-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 1rem;
+  color: #000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.buyer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.buyer-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin: 1rem 0;
+  border-radius: 10px;
+}
+
+
+.kid-card {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #000;
+}
+
+.adult-card {
+  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  color: #000;
+}
+
+.buyer-btn {
+  margin-top: 1rem;
+  color: #000 !important;
+  border-color: #000 !important;
+  font-weight: bold;
+}
+.ai-banner-section {
+  background: radial-gradient(circle at center, #2c1344 0%, #180f2b 100%);
+  padding: 4rem 1rem;
+  border-radius: 20px;
+}
+
+.banner-image {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.banner-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.banner-text {
+  font-size: 1.2rem;
+  color: #ccc;
+  max-width: 500px;
+}
+.book-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.book-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: opacity 0.4s ease-in-out;
+  border-radius: 10px;
+}
+
+.book-image.back {
+  opacity: 0;
+}
+
+.book-image-wrapper:hover .front {
+  opacity: 0;
+}
+
+.book-image-wrapper:hover .back {
+  opacity: 1;
 }
